@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-primary;
+  color: $color-black;
+}
+.container {
+  max-width: 792px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tablet {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  @include notebook {
+  max-width: 1352px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: $font-secondary;
+  font-weight: 300;
+  color: $color-primary;
+}
+
+.btn {
+  color: $color-white;
+  display: inline-block;
+  border: none;
+  font-weight: 700;
+
+}

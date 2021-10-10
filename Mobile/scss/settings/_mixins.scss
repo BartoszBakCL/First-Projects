@@ -1,0 +1,21 @@
+@mixin tv {
+  @media (min-width: 1352px) {
+    @content;
+  }
+}
+
+@mixin notebook {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 792px) {
+    @content;
+  }
+}
+//@mixin mobile {
+//  @media (min-width: 0px) {
+//    @content;
+//  }
+//}

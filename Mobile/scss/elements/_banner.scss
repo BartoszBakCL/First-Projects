@@ -1,0 +1,38 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner__title {
+  font-family: $font-secondary;
+  font-size: 3.0625rem;
+  padding-top: 130px;
+  padding-bottom: 20px;
+}
+
+.btn__primary {
+  width: 100%;
+  padding: 22px 100px;
+  background: $color-primary;
+  color: $color-white;
+  border-radius: 40px;
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+  margin-top: 38px;
+  @include tablet {
+    width: auto;
+    padding: 22px 157px;
+  }
+}
+
+.banner__img {
+  width: 220%;
+  background-position: center;
+  background-size: cover;
+  @include tablet {
+    width: 100%;
+  }
+}

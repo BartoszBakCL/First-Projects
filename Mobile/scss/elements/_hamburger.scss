@@ -1,0 +1,73 @@
+.nav__btn {
+  display: none;
+}
+.nav__toggle {
+  @include tablet {
+    display: none;
+  }
+}
+
+header {
+  label {
+    span {
+      width: 20px;
+      height: 2px;
+      display: block;
+      margin-bottom: 3px;
+      background-color: $color-primary;
+      transition: .3s all ease-in-out;
+      @include tablet {
+        display: none;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.nav__list {
+  position: absolute;
+  left: 0;
+  top: 95px;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 4px;
+  width: 100%;
+  display: none;
+  gap: 15px;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    gap: 3rem;
+  }
+}
+
+ input {
+  &:checked {
+    ~ .nav__list {
+      display: flex;
+    }
+
+    ~ .nav__toggle {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(2px, 5px);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(2px, -5px);
+        }
+      }
+    }
+  }
+   @include tablet {
+     display: none;
+   }
+}

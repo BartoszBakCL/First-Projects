@@ -2,8 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Best-Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +14,16 @@
 <body>
 <header class="header">
     <div class="container header__container">
-
         <a href="/" class="logo header__logo">
             <h1>BestShop</h1>
         </a>
-
         <nav class="header__nav">
+            <input type="checkbox" class="nav__btn" id="nav__btn">
+            <label for="nav__btn" class="nav__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav__list">
                 <li><a href="#" class="list__element">why us</a></li>
                 <li><a href="#" class="list__element">Benefits</a></li>
@@ -113,8 +116,11 @@
 
         <!--first container-->
             <div class="container__small">
+                <div class="right">
                 <h3 class="small__title">Basic</h3>
                 <p class="small__price">$0</p>
+                </div>
+                <div class="left">
                 <div>
                     <img src="images/Checkmark-1.svg" alt="">
                     <span>100 MB HDD</span>
@@ -135,14 +141,18 @@
                     <div class="checkmark--2"></div>
                     <span class="small__span--last">Full support</span>
                 </div>
+                </div>
                 <a href="#" class="btn pricing__btn">Begin</a>
             </div>
 
         <!--second container-->
             <div class="container__small">
+                <div class="right">
                 <h3 class="small__title">Professional</h3>
                 <p class="small__price">$25</p><br>
                 <p class="small__offer">Limited offer</p>
+                </div>
+                <div class="left">
                 <div>
                     <img src="images/Checkmark-1.svg" alt="">
                     <span>500 MB HDD</span>
@@ -163,14 +173,18 @@
                     <div class="checkmark--2"></div>
                     <span class="small__span--last">Full support</span>
                 </div>
+                </div>
                 <a href="#" class="btn pricing__btn">Begin</a>
             </div>
 
         <!--third container-->
             <div class="container__small">
+                <div class="right">
                 <h3 class="small__title">Premium</h3>
                 <p class="small__price">$60</p><br>
                 <p class="small__offer">Limited offer</p>
+                </div>
+                <div class="left">
                 <div>
                     <img src="images/Checkmark-1.svg" alt="">
                     <span>2 GB HDD</span>
@@ -191,6 +205,7 @@
                     <img src="images/Checkmark-1.svg" alt="">
                     <span class="small__span--last">Full support</span>
                 </div>
+                </div>
                 <a href="#" class="btn pricing__btn">Begin</a>
             </div>
         </div>
@@ -204,10 +219,14 @@
             <h2 class="info__title">Any question?</h2>
             <div class="info__text">Leave your email address or call us!</div>
             <div class="info__detail">
+                <div>
                     <img src="images/Mail%20Icon.svg" alt="">
                     <span>info@bestshop.xyz</span>
+                </div>
+                <div>
                     <img src="images/Phone%20Icon.svg" alt="">
                     <span>123 456 789</span>
+                </div>
             </div>
         </div>
         <form class="contact__form">
@@ -235,7 +254,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class=" footer__info">
-            <a href="#" class="logo footer__logo">BestShop!</a>
+            <a href="#" class="logo footer__logo">BestShop</a>
             <span class="footer__copyright">© 2019 BestShop LTD, All Rights Reserved</span>
         </div>
         <div class="footer__social">

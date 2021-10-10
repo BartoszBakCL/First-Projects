@@ -1,0 +1,31 @@
+.footer {
+  box-shadow: 0 -5px 40px $color-secondary-shadow;
+  background: $color-light-grey;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  font-size: 1.625rem;
+}
+
+.footer__copyright {
+  color: $color-grey;
+  font-size: 0.7rem;
+  padding-top: 6px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}

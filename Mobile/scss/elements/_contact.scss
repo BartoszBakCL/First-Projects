@@ -1,0 +1,147 @@
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  @include notebook {
+    flex-direction: row;
+    max-width: 880px;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+}
+
+.contact__info {
+  @include notebook {
+    max-width: 440px;
+    width: 100%;
+  }
+}
+
+.info__title {
+  font-family: $font-secondary;
+  font-size: 2.5em;
+  @include notebook {
+    font-size: 3.0625em;
+  }
+}
+
+.info__text {
+  padding: 5px 0 15px;
+  @include notebook {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.info__detail {
+  padding: 30px 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include notebook {
+    flex-direction: row;
+  }
+  span {
+    color: $color-grey;
+    @include notebook {
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.contact__form {
+  @include notebook {
+    max-width: 440px;
+    width: 100%;
+  }
+}
+
+.form__label {
+    display: block;
+    font-size: 0.688rem;
+    padding-bottom: 20px;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.205rem;
+    font-weight: 700;
+}
+
+.form__group:nth-child(2) .form__label {
+    padding-top: 40px;
+}
+
+.form__group:nth-child(2) .form__input {
+    margin-bottom: 30px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__btn {
+    display: block;
+}
+
+.form__input {
+    border: none;
+    display: block;
+    border-bottom: 1px solid $color-grey;
+
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: flex;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox__text {
+    font-size: 0.75rem;
+    color: #707070;
+    line-height: 1.063rem;
+    padding-bottom: 20px;
+}
+
+.checkbox__fixed {
+    display: block;
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.checkbox input:checked + .checkbox__fixed::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/Checkmark.svg");
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.form__btn {
+    margin-left: auto;
+    font-family: $font-primary;
+    font-size: 0.813rem;
+    background: $color-primary;
+    border-radius: 35px;
+    box-shadow: $color-primary-shadow;
+    padding: 20px 97px;
+}
